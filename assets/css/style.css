@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27); 
+
+
+:root{
+    --background-body: #E5DADA;
+    --background-nav:#6F1D1B;
+    --background-footer: #002642;
+    --sombra: #02040F;
+    --letras: #E59500;
+    --cor1:#C75146;
+    --cor2:  #1B3B6F;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-body) ;
+}
+p{
+    font-family: 'lato', Roboto;
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'lato', cursive;
+    margin-bottom: 3px;
+    font-weight: 800;
+    color: var(--background-footer);
+}
+
+h1{
+    margin: 1rem;
+    font-size: 2.3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    color: #6F1D1B;
+}
+
+h2{
+    font-size: 1.7rem;
+    color: #E59500;
+}
+
+h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2,
+h3{
+    text-align: center;
+}
+
+
+
+nav{
+    margin: 0 auto;
+    width: 80vw;
+    background-color:var(--background-nav);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 2.25rem 1.5rem;
+    box-shadow: 2px 2px 5px var(--sombra);
+    text-align: right;
+    font-family: 'lato', Roboto;
+    font-weight: 550;
+    color:var(--letras);
+    font-size: 1.5rem;
+
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+}
+
+.icone{
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+.titulo{
+    font-family: 'lato', cursive;
+    color:var(--background-body);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 24px;
+}
+
+nav a{
+    color:var(--background-body)
+}
+
+main{
+    width: 80w;
+    margin: 0 auto;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor2);
+    border-radius: 16px;
+    gap: 20px;
+    text-align:left;
+    font-family: 'lato', Roboto;
+    font-weight: 550;
+    color: var(--background-body);
+    font-size: 1.3rem;
+}
+
+.foto{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+
+footer{
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 70vw;
+    text-align: center;
+
+    background-color: var(--background-footer);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    font-family: 'lato', Roboto;
+    font-weight: 500;
+    color: var(--letras);
+    font-size: 1.5em;
+}
+
+.icons{
+    width: 6rem;
+    padding-right: 2rem;
+    display:flexbox;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilizar o formulario */
+
+hr{
+    margin: 1rem;
+}
+
+label{
+    font-family: 'lato', Roboto;
+    color: black;
+    font-size: 1rem;
+}
+
+imput,
+textarea,
+button{
+    font-family: 'lato', Roboto;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color:black;
+}
+
+button{
+    font-family: 'lato', Roboto;
+    background-color: var(--background-nav);
+    font-weight: 800;
+    color: var(--letras);
+}
+
+button:hover{
+    background-color: var(--cor1);
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    border: 4px solid var(--cor1);
+}
+
+imput::placeholder,
+textarea::placeholder{
+   color: var(--background-nav);
+}
