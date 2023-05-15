@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/pmg" href="assets/images/goku_ico.png">
+    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfólio da Joyce</title>
+    <title>Portfólio</title>
 </head>
 
 <body>
-    <!-- Menu da Página -->
+
     <nav>
         <div class="logo">
             <img class="icone" src="assets/images/goku_ico.png" alt="Logo">
-            <span class="titulo">Joyce</span>
+            <span class="titulo">Portfólio do Goku</span>
         </div>
 
         <ul>
@@ -24,22 +24,22 @@
         </ul>
     </nav>
 
-    <!-- Conteúdo da Página -->
-    <main class="contato">
-        <section class="formulario">
+
+    <main id="contato">
+        <section id="formulario_mensagem">
             <h3>Contato</h2>
                 <form>
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
-                        <textarea onkeyup="validarNome()" id="nome" name="nome" type="text"
-                            placeholder="Insira o seu nome completo"></textarea>
+                        <input onkeyup="validarNome()" id="nome" name="nome" type="text"
+                            placeholder="Insira o seu nome completo">
                         <div id="txtNome"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
-                        <textarea onkeyup="validarEmail2()" id="email" name="email" type="text"
-                            placeholder="Insira o seu e-mail"></textarea>
+                        <input onkeyup="validarEmail2()" id="email" name="email" type="text"
+                            placeholder="Insira o seu e-mail">
                         <div id="txtEmail"></div>
                     </div>
 
@@ -58,16 +58,15 @@
                 </form>
         </section>
 
-        <section>
+        <section id="formulario_buscacep">
             <h3>Consultar CEP</h3>
-            <div class="cep">
+            <div class="endereco">
                 <div class="campos-form">
                     <label for="cep">CEP:</label>
-                    <itextarea onkeyup="validarCep()" id="cep" name="cep" type="text" 
-                    placeholder="Digite o número do CEP">
+                    <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
                     <div id="txtCep"></div>
                 </div>
-                <button type="button" onclick="consultarCep()"></textarea>
+                <button type="button" onclick="consultarCep()">
                     Consultar
                 </button>
                 <hr>
@@ -78,10 +77,8 @@
                 </div>
             </div>
         </section>
-        </form>
-        </form>
     </main>
-    <!-- Rodapé da Página -->
+
     <footer>
         <div class="redes_sociais">
             <a href="http://linkedin.com" target="_blank">
@@ -94,10 +91,9 @@
                 <img class="icons" src="assets/images/instagram.png" alt="Instagram">
             </a>
         </div>
-        </a>
-        <p>Desenvolvido por: Joyce Caroline Rodrigues😊</p>
+        <p class="by">Desenvolvido por: Rafael Queiróz - 2023 &copy;</p>
     </footer>
-    </footer>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
