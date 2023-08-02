@@ -4,9 +4,9 @@
 /*Definição das Variáveis do CSS*/
 :root {
     /*Cores de Fundo (Background)*/
-    --background-page: #8338ec;
-    --background-nav: #32092d;
-    --background-sobre: #42113c;
+    background-image: linear-gradient(to bottom right,#BF56EC,#0000ff,#009DDC );
+    --background-nav: #009DDC;
+    --background-sobre: #009DDC;
     --background-footer: #1c0118;
 
     /* Cores das Fontes (texto) */
@@ -146,6 +146,7 @@ nav a,
     justify-content: left;
     gap: 0.5rem;
     align-items: center;
+
 }
 
 /* Define configurações específicas da classe icone */
